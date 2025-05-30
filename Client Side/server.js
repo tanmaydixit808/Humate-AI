@@ -11,8 +11,8 @@ const app = next({ dev });
 const handle = app.getRequestHandler();
 
 const options = {
-  key: fs.readFileSync('/etc/letsencrypt/live/shivsingh.com/privkey.pem'),
-  cert: fs.readFileSync('/etc/letsencrypt/live/shivsingh.com/fullchain.pem'),
+  key: fs.readFileSync(''), // write your certificate here (/etc/letsencrypt/live/yourdomain.com/privkey.pem)
+  cert: fs.readFileSync(''), //write your certificate here (/etc/letsencrypt/live/yourdomain.com/fullchain.pem)
 };
 
 app.prepare().then(() => {
